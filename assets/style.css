@@ -1,0 +1,288 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --font-secondary: "SF Mono", "Fira Code", "Fira Mono", "Roboto Mono", monospace;
+    --font-main: "Calibre", "Inter", "San Francisco", "SF Pro Text", -apple-system, system-ui, sans-serif
+}
+
+a {
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+h2 {
+    font-size: 60px;
+}
+
+h3 {
+    font-size: 50px;
+}
+
+h4 {
+    font-size: 30px;
+}
+
+body {
+    background-image: linear-gradient(rgba(77, 12, 129, 0.8) 50%,
+            rgba(81, 14, 126, 0.9) 100%);
+}
+
+/* Nav bar */
+ul {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    justify-content: space-evenly;
+    margin: 0px 5% 0px 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: #ffffff;
+    font-family: var(--font-secondary);
+}
+
+.navbar-nav a {
+    color: white !important;
+}
+
+.jumbotron {
+    color: white;
+    text-shadow: 1px 1px #000000;
+    background-image: url("../assets/images/programming2.jpg"), linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-blend-mode: multiply;
+    background-size: cover;
+    min-height: 500px;
+}
+
+
+/* Intro heading section */
+.intro1 {
+    display: flex;
+    flex-direction: row;
+    margin: -16px 3% 0.9% 2.5%;
+    font-family: var(--font-secondary);
+}
+
+.intro2 {
+    display: flex;
+    flex-direction: row;
+    margin: -18px 3% 0.9% 2.5%;
+    color: rgb(76, 0, 95);
+    font-family: var(--font-main);
+}
+
+.intro3 {
+    display: flex;
+    flex-direction: row;
+    margin: -18px 3% 0.9% 2.5%;
+    color: rgba(76, 0, 95, 0.7);
+    font-family: var(--font-main);
+}
+
+/* About me section */
+#about-heading {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--font-secondary);
+    margin-bottom: -80px;
+    margin-top: 80px
+}
+
+#about-me {
+    font-size: 25px;
+    margin: 0px 3% 0px 2.5%;
+    font-family: var(--font-main)
+}
+
+#avatar {
+    display: flex;
+    width: 100px;
+    position: relative;
+    margin: -50px 0px 0px 120px;
+}
+
+/* My work section */
+#my-work-heading {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--font-secondary);
+    margin-bottom: -30px;
+    margin-top: 30px
+}
+
+#my-work {
+    font-size: 25px;
+    margin: 15px 3% 35px 2.5%;
+    font-family: var(--font-main)
+}
+
+/* #grid {
+    margin: 0px 5%;
+    display: grid;
+    max-height: 100vh;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    row-gap: 0px;
+} */
+/* 
+article:first-child {
+    grid-column: 1/3;
+} */
+
+/* .main-grid-area {
+    display: flex;
+    position: relative;
+} */
+
+#grid-heading {
+    display: flex;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.541);
+    font-size: 25px;
+    padding: 1%;
+    border: #ffffff;
+    border-radius: 15px;
+    font-family: var(--font-main);
+    color: white;
+}
+
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+#grid img:hover {
+    filter: opacity(70%);
+    transition: all 0.50s;
+}
+
+#project1 {
+    /* grid-area: project1; */
+    color: white;
+    font-size: 18px;
+    margin-bottom: 2%;
+    border-radius: 25px;
+    max-height: 550px;
+}
+
+.projectr2 {
+    min-height: 400px;
+}
+
+.project-heading {
+    color: white;
+    font-size: 18px;
+    border-radius: 25px;
+}
+
+/* Contact me section */
+#contact-heading {
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    font-family: var(--font-secondary);
+    margin-bottom: -30px;
+    margin-top: 30px
+}
+
+#contact-me {
+    display: flex;
+    position: relative;
+    font-size: 25px;
+    margin: 15px 3% 35px 2.5%;
+    font-family: var(--font-main)
+}
+
+.fa-envelope {
+    margin-right: 10px;
+}
+
+/* footer section */
+footer {
+    padding: 25px;
+    text-align: center;
+    align-content: center;
+    font-size: 20px;
+    font-family: var(--font-main);
+    color: #ce95fd;
+}
+
+footer p {
+    font-size: 13px;
+}
+
+/* Media query */
+@media screen and (max-width: 576px) {
+    .projectr2 {
+        min-height: 300px;
+    }
+
+    #grid {
+        margin: 0px 5%;
+        display: grid;
+        max-height: 100vh;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        row-gap: 10px;
+    }
+
+    article:first-child {
+        grid-column: auto;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        font-size: 20px;
+        justify-content: space-evenly;
+        margin: 0px 0% 7%;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 10px;
+        color: #ffffff;
+    }
+
+    #about-heading {
+        margin-top: 90px;
+    }
+
+    .about-me {
+        font-size: 25px;
+        margin: 0px 3% 30px 2.5%;
+        font-family: var(--font-main)
+    }
+
+    #contact-heading {
+        font-size: 20px;
+        display: flex;
+        flex-direction: row;
+        font-family: var(--font-secondary);
+        margin-bottom: -30px;
+        margin-top: 100px
+    }
+
+    #grid-heading {
+        height: auto;
+    }
+
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+}
