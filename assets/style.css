@@ -51,6 +51,10 @@ ul {
     color: white !important;
 }
 
+.nav-item:hover {
+    background-color: rgb(17, 190, 233);
+}
+
 .jumbotron {
     color: white;
     text-shadow: 1px 1px #000000;
@@ -91,8 +95,7 @@ ul {
     display: flex;
     flex-direction: row;
     font-family: var(--font-secondary);
-    margin-bottom: -80px;
-    margin-top: 80px
+    margin-top: 30px
 }
 
 #about-me {
@@ -105,7 +108,7 @@ ul {
     display: flex;
     width: 100px;
     position: relative;
-    margin: -50px 0px 0px 120px;
+    margin: -50px 0px 0px 220px;
 }
 
 /* My work section */
@@ -162,7 +165,7 @@ img {
     border-radius: 20px;
 }
 
-#grid img:hover {
+article img:hover {
     filter: opacity(70%);
     transition: all 0.50s;
 }
@@ -220,6 +223,16 @@ footer {
 
 footer p {
     font-size: 13px;
+}
+
+.btn-style {
+    box-shadow: 0px 15px 20px rgba(36, 241, 248, 0.4);
+}
+
+.btn-style:hover {
+    transition: 0.4s;
+    transform: translateY(-8px);
+    box-shadow: 0px 15px 30px rgba(248, 36, 36, 0.4);
 }
 
 /* Media query */
