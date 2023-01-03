@@ -6,16 +6,9 @@ Hello, welcome to my Portfolio. I have created this portfolio to showcase the wo
 
 ## Usage
 
-![image](https://user-images.githubusercontent.com/119757179/208496167-1c46372b-93d5-414d-974d-a9c91ecee8e8.png)
+https://jordshub.github.io/portfolio-bootstrap/
 
-
-## Credits
-
-List your collaborators, if any, with links to their GitHub profiles.
-
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
-
-If you followed tutorials, include links to those here as well.
+![image](https://user-images.githubusercontent.com/119757179/210454101-aaed637a-647c-4d90-a3bc-9125fbfc58e5.png)
 
 ## License
 
